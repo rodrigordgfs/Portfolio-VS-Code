@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
   background: ${(props) => props.theme.primary};
-  height: 20px;
+  height: 30px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -17,7 +17,7 @@ export const FooterSSL = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 20px;
+  height: 30px;
   width: 60px;
   cursor: pointer;
 `
