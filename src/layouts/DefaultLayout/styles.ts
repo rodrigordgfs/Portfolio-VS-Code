@@ -7,6 +7,16 @@ export const DefaultLayoutContainer = styled.div`
   height: calc(100vh - 60px);
   width: 100%;
 `
+export const DefaultLayoutContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 60px);
+
+  @media only screen and (max-device-width: 510px) {
+    height: 100vh;
+  }
+`
+
 export const OutletContainer = styled(Outlet)`
   flex: 1;
 `

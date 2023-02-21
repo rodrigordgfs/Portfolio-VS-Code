@@ -4,7 +4,13 @@ import { Menu } from '../../components/Menu'
 import Drawer from 'react-modern-drawer'
 import { useContext } from 'react'
 import { SettingsContext } from '../../contexts/SettingsContext'
-import { DefaultLayoutContainer, MenuWrapper, OutletContainer } from './styles'
+import {
+  DefaultLayoutContainer,
+  DefaultLayoutContent,
+  MenuWrapper,
+  OutletContainer,
+} from './styles'
+import { Tabs } from '../../components/Tabs'
 
 export function DefaultLayout() {
   const { isDrawerOpen, toogleDrawer } = useContext(SettingsContext)
@@ -25,7 +31,10 @@ export function DefaultLayout() {
         <MenuWrapper>
           <Menu />
         </MenuWrapper>
-        <OutletContainer />
+        <DefaultLayoutContent>
+          <Tabs />
+          <OutletContainer />
+        </DefaultLayoutContent>
       </DefaultLayoutContainer>
       <Footer />
     </>
