@@ -1,5 +1,4 @@
 import { Divider, MenuContainer, MenuItem } from './styles'
-import { ImHome3 } from 'react-icons/im'
 import {
   BsLinkedin,
   BsWhatsapp,
@@ -9,14 +8,14 @@ import {
 } from 'react-icons/bs'
 import { FaFileDownload } from 'react-icons/fa'
 import { FiSettings } from 'react-icons/fi'
+import { MdEmail } from 'react-icons/md'
 
 export function Menu() {
   return (
     <MenuContainer>
       <MenuItem href="#">
-        <ImHome3 />
+        <MdEmail />
       </MenuItem>
-      <Divider />
       <MenuItem href="#">
         <BsGithub />
       </MenuItem>
@@ -33,10 +32,10 @@ export function Menu() {
         <BsFacebook />
       </MenuItem>
       <Divider />
-      <MenuItem>
+      <MenuItem href="#">
         <FaFileDownload />
       </MenuItem>
-      <MenuItem>
+      <MenuItem href="#">
         <FiSettings />
       </MenuItem>
     </MenuContainer>

@@ -8,8 +8,8 @@ export const defaultTheme = {
   'visual-studio-code': '#007ACC',
   react: '#61DBFB',
   css: '#264de4',
-  html: 'orange',
-  vue: 'green',
+  html: '#e34c26',
+  vue: '#42b883  ',
 
   'gray-400': '#94a3b8',
   'gray-300': '#cbd5e1',

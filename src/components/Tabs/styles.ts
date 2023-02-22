@@ -3,6 +3,7 @@ import { FaReact } from 'react-icons/fa'
 import { DiCss3 } from 'react-icons/di'
 import { AiFillHtml5 } from 'react-icons/ai'
 import { RiVuejsFill } from 'react-icons/ri'
+import { Link } from 'react-router-dom'
 
 interface TabItemProps {
   isActive: boolean
@@ -16,7 +17,7 @@ export const TabsContainer = styled.div`
   background: ${(props) => props.theme.primary};
 `
 
-export const TabItem = styled.div<TabItemProps>`
+export const TabItem = styled(Link)<TabItemProps>`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -26,6 +27,11 @@ export const TabItem = styled.div<TabItemProps>`
   font-size: 14px;
   gap: 8px;
   cursor: pointer;
+  transition: background 0.2s;
+
+  span {
+    color: ${(props) => props.theme.text};
+  }
 `
 
 export const ReactIcon = styled(FaReact)`
