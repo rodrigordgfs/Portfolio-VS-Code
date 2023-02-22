@@ -1,23 +1,22 @@
 import styled from 'styled-components'
-import { Outlet } from 'react-router-dom'
 
 export const DefaultLayoutContainer = styled.div`
   display: flex;
   flex-direction: row;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 80px);
   width: 100%;
 `
 export const DefaultLayoutContent = styled.div`
   display: flex;
   flex-direction: column;
-  width: calc(100vw - 60px);
+  width: calc(100vw - 80px);
 
   @media only screen and (max-device-width: 510px) {
     height: 100vh;
   }
 `
 
-export const OutletContainer = styled(Outlet)`
+export const ContentContainer = styled.div`
   flex: 1;
 `
 

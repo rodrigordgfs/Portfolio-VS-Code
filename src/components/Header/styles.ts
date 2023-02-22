@@ -4,7 +4,7 @@ import { FiMenu } from 'react-icons/fi'
 
 export const HeaderContainer = styled.header`
   background: ${(props) => props.theme.primary};
-  height: 30px;
+  height: 50px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -16,6 +16,7 @@ export const HeaderContainer = styled.header`
 export const HeaderIcon = styled.div`
   display: flex;
   align-items: center;
+  font-size: 20px;
 `
 
 export const VSCodeIcon = styled(SiVisualstudio)`
@@ -24,7 +25,7 @@ export const VSCodeIcon = styled(SiVisualstudio)`
 
 export const MenuIcon = styled(FiMenu)`
   color: ${(props) => props.theme.text};
-  font-size: 1.125rem;
+  font-size: 20px;
   cursor: pointer;
   display: none;
 

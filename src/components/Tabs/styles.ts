@@ -12,7 +12,7 @@ interface TabItemProps {
 export const TabsContainer = styled.div`
   display: flex;
   flex-direction: row;
-  height: 30px;
+  height: 50px;
   width: 100%;
   background: ${(props) => props.theme.primary};
 `

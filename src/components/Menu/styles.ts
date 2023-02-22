@@ -12,13 +12,13 @@ interface FilesItemProps {
 export const MenuContainer = styled.div`
   display: flex;
   flex-direction: row;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 80px);
 `
 
 export const SocialNetworksContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 80px);
   align-items: center;
   width: 60px;
   background: ${(props) => props.theme.primary};
@@ -31,7 +31,7 @@ export const SocialNetworksContainer = styled.div`
 export const FilesContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 80px);
   width: 200px;
   padding: 0 16px;
   background: ${(props) => props.theme.primary};
@@ -86,7 +86,7 @@ export const FilesItem = styled.li<FilesItemProps>`
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 4px 0 4px 16px;
+  padding: 8px 0 8px 16px;
   cursor: pointer;
   gap: 8px;
   background: ${(props) =>
