@@ -1,4 +1,3 @@
-import { useCallback, useEffect } from 'react'
 import {
   CSSIcon,
   HTMLIcon,
@@ -7,43 +6,26 @@ import {
   TabsContainer,
   VUEIcon,
 } from './styles'
-import { matchRoutes, useLocation } from 'react-router-dom'
+import useIsActiveRoute from '../../hook/useIsActiveRoute'
 
 export function Tabs() {
-  const location = useLocation()
-
-  const isActiveRoute = useCallback(
-    (path: string) => {
-      const match = matchRoutes([{ path }], location.pathname)
-      if (match) {
-        return match.length > 0
-      }
-      return false
-    },
-    [location.pathname],
-  )
-
-  useEffect(() => {
-    console.log()
-  }, [isActiveRoute])
-
   return (
     <TabsContainer>
-      <TabItem isActive={isActiveRoute('/')} to="/">
+      <TabItem active={useIsActiveRoute('/')} to="/">
         <ReactIcon />
         <span>Home.tsx</span>
       </TabItem>
-      <TabItem isActive={isActiveRoute('/about')} to="/about">
+      <TabItem active={useIsActiveRoute('/about')} to="/about">
         <VUEIcon />
-        <span>About.css</span>
+        <span>About.vue</span>
       </TabItem>
-      <TabItem isActive={isActiveRoute('/projects')} to="/projects">
+      <TabItem active={useIsActiveRoute('/projects')} to="/projects">
         <HTMLIcon />
         <span>Projects.html</span>
       </TabItem>
-      <TabItem isActive={isActiveRoute('/contact')} to="/contact">
+      <TabItem active={useIsActiveRoute('/contact')} to="/contact">
         <CSSIcon />
-        <span>Contact.html</span>
+        <span>Contact.css</span>
       </TabItem>
     </TabsContainer>
   )

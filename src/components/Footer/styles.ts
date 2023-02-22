@@ -11,7 +11,7 @@ export const FooterContainer = styled.footer`
   -webkit-box-shadow: 4px 0px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.4);
 `
-export const FooterSSL = styled.div`
+export const FooterSSL = styled.a`
   background: ${(props) => props.theme.accent};
   color: ${(props) => props.theme.primary};
   display: flex;

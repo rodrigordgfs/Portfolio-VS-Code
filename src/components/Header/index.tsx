@@ -26,7 +26,7 @@ export function Header() {
           <MenuIcon />
         </HeaderIcon>
       </HeaderIconsContainer>
-      <HeaderText>index.tsx - Portfolio - Visual Studio Code</HeaderText>
+      <HeaderText>Portfolio - Shinoda Labs Code</HeaderText>
     </HeaderContainer>
   )
 }

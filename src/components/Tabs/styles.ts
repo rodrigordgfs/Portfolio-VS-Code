@@ -6,7 +6,7 @@ import { RiVuejsFill } from 'react-icons/ri'
 import { Link } from 'react-router-dom'
 
 interface TabItemProps {
-  isActive: boolean
+  active: boolean
 }
 
 export const TabsContainer = styled.div`
@@ -22,7 +22,9 @@ export const TabItem = styled(Link)<TabItemProps>`
   flex-direction: row;
   align-items: center;
   background: ${(props) =>
-    props.isActive ? props.theme.secondary : props.theme.primary};
+    props.active ? props.theme.secondary : props.theme.primary};
+  border-top: 3px solid
+    ${(props) => (props.active ? props.theme.accent : props.theme.transparent)};
   padding: 0 16px;
   font-size: 1rem;
   gap: 8px;

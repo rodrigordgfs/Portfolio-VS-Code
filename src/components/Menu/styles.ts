@@ -1,11 +1,39 @@
 import styled from 'styled-components'
+import { FcFolder } from 'react-icons/fc'
+import { FaReact } from 'react-icons/fa'
+import { DiCss3 } from 'react-icons/di'
+import { AiFillHtml5 } from 'react-icons/ai'
+import { RiVuejsFill } from 'react-icons/ri'
+
+interface FilesItemProps {
+  active: boolean
+}
 
 export const MenuContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 60px);
+`
+
+export const SocialNetworksContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: calc(100vh - 60px);
   align-items: center;
   width: 60px;
+  background: ${(props) => props.theme.primary};
+
+  @media only screen and (max-device-width: 510px) {
+    height: 100vh;
+  }
+`
+
+export const FilesContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+  width: 200px;
+  padding: 0 16px;
   background: ${(props) => props.theme.primary};
 
   @media only screen and (max-device-width: 510px) {
@@ -19,4 +47,73 @@ export const Divider = styled.span`
   background: ${(props) => props.theme['gray-400']};
   opacity: 0.2;
   margin: 8px 0;
+`
+
+export const ExplorerTitle = styled.p`
+  font-size: 16px;
+  color: ${(props) => props.theme.text};
+  margin-top: 12px;
+  text-transform: uppercase;
+`
+
+export const PortfolioContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+`
+
+export const FolderIcon = styled(FcFolder)`
+  font-size: 20px;
+`
+
+export const PortfolioText = styled.p`
+  font-size: 14px;
+`
+
+export const Files = styled.ul`
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  gap: 4px;
+`
+
+export const FilesItem = styled.li<FilesItemProps>`
+  font-size: 14px;
+  color: ${(props) => props.theme.text};
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 0 4px 16px;
+  cursor: pointer;
+  gap: 8px;
+  background: ${(props) =>
+    props.active ? props.theme.secondary : props.theme.transparent};
+
+  &:hover {
+    background: ${(props) => props.theme.secondary};
+    transition: 0.2s background ease-in-out;
+  }
+`
+
+export const ReactIcon = styled(FaReact)`
+  color: ${(props) => props.theme.react};
+  font-size: 1.125rem;
+`
+
+export const CSSIcon = styled(DiCss3)`
+  color: ${(props) => props.theme.css};
+  font-size: 1.125rem;
+`
+
+export const HTMLIcon = styled(AiFillHtml5)`
+  color: ${(props) => props.theme.html};
+  font-size: 1.125rem;
+`
+
+export const VUEIcon = styled(RiVuejsFill)`
+  color: ${(props) => props.theme.vue};
+  font-size: 1.125rem;
 `
