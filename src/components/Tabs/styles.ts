@@ -24,7 +24,7 @@ export const TabItem = styled(Link)<TabItemProps>`
   background: ${(props) =>
     props.isActive ? props.theme.secondary : props.theme.primary};
   padding: 0 16px;
-  font-size: 14px;
+  font-size: 1rem;
   gap: 8px;
   cursor: pointer;
   transition: background 0.2s;
@@ -37,20 +37,20 @@ export const TabItem = styled(Link)<TabItemProps>`
 
 export const ReactIcon = styled(FaReact)`
   color: ${(props) => props.theme.react};
-  font-size: 18px;
+  font-size: 1.125rem;
 `
 
 export const CSSIcon = styled(DiCss3)`
   color: ${(props) => props.theme.css};
-  font-size: 18px;
+  font-size: 1.125rem;
 `
 
 export const HTMLIcon = styled(AiFillHtml5)`
   color: ${(props) => props.theme.html};
-  font-size: 18px;
+  font-size: 1.125rem;
 `
 
 export const VUEIcon = styled(RiVuejsFill)`
   color: ${(props) => props.theme.vue};
-  font-size: 18px;
+  font-size: 1.125rem;
 `

@@ -7,7 +7,7 @@ export const MenuItemContainer = styled.a`
   justify-content: center;
   height: 40px;
   width: 60px;
-  font-size: 25px;
+  font-size: 1.5625rem;
   margin: 4px 0;
   color: ${(props) => props.theme['gray-300']};
   cursor: pointer;

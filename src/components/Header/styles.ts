@@ -24,7 +24,7 @@ export const VSCodeIcon = styled(SiVisualstudio)`
 
 export const MenuIcon = styled(FiMenu)`
   color: ${(props) => props.theme.text};
-  font-size: 18px;
+  font-size: 1.125rem;
   cursor: pointer;
   display: none;
 
@@ -37,7 +37,7 @@ export const HeaderText = styled.p`
   flex: 1;
   padding: 0 16px;
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 16px;
 `
 export const HeaderIconsContainer = styled.div`
   display: flex;

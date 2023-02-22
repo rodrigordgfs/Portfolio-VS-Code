@@ -25,7 +25,7 @@ export const FooterBranch = styled.div`
   color: ${(props) => props.theme['gray-300']};
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 0.875rem;
   padding-left: 16px;
   gap: 8px;
   cursor: pointer;
