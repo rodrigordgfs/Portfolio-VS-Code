@@ -8,7 +8,8 @@ export const HeaderContainer = styled.header`
   width: 100%;
   display: flex;
   align-items: center;
-  padding-left: 16px;
+  justify-content: space-between;
+  padding: 0 16px;
   -moz-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0px 4px rgba(0, 0, 0, 0.4);
@@ -45,4 +46,13 @@ export const HeaderIconsContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 16px;
+`
+
+export const HeaderActionsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  color: ${(props) => props.theme.text};
+  font-size: 20px;
 `

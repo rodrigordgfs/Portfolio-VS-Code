@@ -1,4 +1,5 @@
 import {
+  HeaderActionsContainer,
   HeaderContainer,
   HeaderIcon,
   HeaderIconsContainer,
@@ -6,6 +7,11 @@ import {
   MenuIcon,
   VSCodeIcon,
 } from './styles'
+import {
+  VscChromeMinimize,
+  VscChromeMaximize,
+  VscChromeClose,
+} from 'react-icons/vsc'
 import { useContext } from 'react'
 import { SettingsContext } from '../../contexts/SettingsContext'
 
@@ -26,7 +32,12 @@ export function Header() {
           <MenuIcon />
         </HeaderIcon>
       </HeaderIconsContainer>
-      <HeaderText>Portfolio - Shinoda Labs Code</HeaderText>
+      <HeaderText>Shinoda Labs</HeaderText>
+      <HeaderActionsContainer>
+        <VscChromeMinimize />
+        <VscChromeMaximize />
+        <VscChromeClose />
+      </HeaderActionsContainer>
     </HeaderContainer>
   )
 }

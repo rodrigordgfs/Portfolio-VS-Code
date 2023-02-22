@@ -19,7 +19,12 @@ export const DefaultLayoutContent = styled.div`
 `
 
 export const ContentContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  max-width: calc(100vw - 265px);
+  width: 100%;
   flex: 1;
+  overflow: hidden;
 `
 export const OutletContainer = styled(Outlet)`
   flex: 1;

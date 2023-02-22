@@ -1,7 +1,7 @@
-import { DiCss3 } from 'react-icons/di'
+import { RiVuejsFill } from 'react-icons/ri'
 import styled from 'styled-components'
 
-export const Icon = styled(DiCss3)`
-  color: ${(props) => props.theme.css};
+export const Icon = styled(RiVuejsFill)`
+  color: ${(props) => props.theme.vue};
   font-size: 1.125rem;
 `
