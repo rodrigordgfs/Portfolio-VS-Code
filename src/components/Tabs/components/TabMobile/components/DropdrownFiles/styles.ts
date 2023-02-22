@@ -32,12 +32,12 @@ export const FilesContainer = styled(DropdownMenu.Content)`
 `
 
 export const FilesItem = styled.li<FilesItemProps>`
-  font-size: 14px;
+  font-size: 16px;
   color: ${(props) => props.theme.text};
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 8px 16px 8px 16px;
+  padding: 12px 16px 12px 16px;
   cursor: pointer;
   gap: 8px;
   background: ${(props) =>
