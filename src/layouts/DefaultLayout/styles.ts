@@ -25,9 +25,15 @@ export const ContentContainer = styled.div`
   width: 100%;
   flex: 1;
   overflow: hidden;
+
+  @media only screen and (max-device-width: 850px) {
+    max-width: 100%;
+  }
 `
+
 export const OutletContainer = styled(Outlet)`
   flex: 1;
+  max-width: 100%;
 `
 
 export const MenuWrapper = styled.div`

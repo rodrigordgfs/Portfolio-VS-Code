@@ -28,7 +28,7 @@ export function DefaultLayout() {
           onClose={toogleDrawer}
           direction="left"
           overlayOpacity={0.8}
-          size={260}
+          size={240}
         >
           <Menu />
         </Drawer>

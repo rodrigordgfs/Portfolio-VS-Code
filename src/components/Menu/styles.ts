@@ -28,7 +28,7 @@ export const FilesContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: calc(100vh - 80px);
-  width: 200px;
+  width: 180px;
   padding: 0 16px;
   background: ${(props) => props.theme.primary};
 
