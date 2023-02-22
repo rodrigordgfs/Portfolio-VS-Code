@@ -1,11 +1,9 @@
+import { CSSIcon } from '../../../CSSIcon'
+import { HTMLIcon } from '../../../HTMLIcon'
+import { ReactIcon } from '../../../ReactIcon'
+import { VUEIcon } from '../../../VUEIcon'
 import { TabItem } from '../TabItem'
-import {
-  CSSIcon,
-  HTMLIcon,
-  ReactIcon,
-  TabsDesktopContainer,
-  VUEIcon,
-} from './styles'
+import { TabsDesktopContainer } from './styles'
 
 export function TabsDesktop() {
   return (

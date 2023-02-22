@@ -1,18 +1,14 @@
 import {
-  CSSIcon,
   Divider,
   ExplorerTitle,
   Files,
   FilesContainer,
   FilesItem,
   FolderIcon,
-  HTMLIcon,
   MenuContainer,
   PortfolioContainer,
   PortfolioText,
-  ReactIcon,
   SocialNetworksContainer,
-  VUEIcon,
 } from './styles'
 import {
   BsLinkedin,
@@ -29,6 +25,10 @@ import { MenuItem } from './components/MenuItem'
 import { SettingsContext } from '../../contexts/SettingsContext'
 import { useNavigate } from 'react-router-dom'
 import useIsActiveRoute from '../../hook/useIsActiveRoute'
+import { ReactIcon } from '../ReactIcon'
+import { VUEIcon } from '../VUEIcon'
+import { HTMLIcon } from '../HTMLIcon'
+import { CSSIcon } from '../CSSIcon'
 
 export function Menu() {
   const navigate = useNavigate()

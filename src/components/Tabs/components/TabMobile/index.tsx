@@ -1,13 +1,11 @@
 import useIsActiveRoute from '../../../../hook/useIsActiveRoute'
 import { TabItem } from '../TabItem'
-import {
-  CSSIcon,
-  HTMLIcon,
-  ReactIcon,
-  TabsMobileContainer,
-  VUEIcon,
-} from './styles'
+import { TabsMobileContainer } from './styles'
 import { DropdownFiles } from './components/DropdrownFiles'
+import { ReactIcon } from '../../../ReactIcon'
+import { VUEIcon } from '../../../VUEIcon'
+import { HTMLIcon } from '../../../HTMLIcon'
+import { CSSIcon } from '../../../CSSIcon'
 
 export function TabMobile() {
   return (

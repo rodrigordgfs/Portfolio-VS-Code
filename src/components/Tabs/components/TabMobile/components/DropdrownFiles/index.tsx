@@ -1,18 +1,14 @@
 import { AiFillCaretDown } from 'react-icons/ai'
-import {
-  ButtonShowFiles,
-  CSSIcon,
-  FilesContainer,
-  FilesItem,
-  HTMLIcon,
-  ReactIcon,
-  VUEIcon,
-} from './styles'
+import { ButtonShowFiles, FilesContainer, FilesItem } from './styles'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import useIsActiveRoute from '../../../../../../hook/useIsActiveRoute'
 import { useNavigate } from 'react-router-dom'
 import { useContext } from 'react'
 import { SettingsContext } from '../../../../../../contexts/SettingsContext'
+import { ReactIcon } from '../../../../../ReactIcon'
+import { VUEIcon } from '../../../../../VUEIcon'
+import { HTMLIcon } from '../../../../../HTMLIcon'
+import { CSSIcon } from '../../../../../CSSIcon'
 
 export function DropdownFiles() {
   const navigate = useNavigate()
