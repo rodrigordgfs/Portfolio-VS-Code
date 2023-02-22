@@ -28,6 +28,7 @@ export const TabItem = styled(Link)<TabItemProps>`
   gap: 8px;
   cursor: pointer;
   transition: background 0.2s;
+  text-decoration: none;
 
   span {
     color: ${(props) => props.theme.text};

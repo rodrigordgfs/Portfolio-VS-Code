@@ -4,6 +4,7 @@ export const defaultTheme = {
   tertiary: '#333333',
   accent: '#88cc44',
   text: '#FFFFFF',
+  black: '#000000',
 
   'visual-studio-code': '#007ACC',
   react: '#61DBFB',
