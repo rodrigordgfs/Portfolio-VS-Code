@@ -4,12 +4,13 @@ import { Menu } from '../../components/Menu'
 import Drawer from 'react-modern-drawer'
 import { useContext } from 'react'
 import { SettingsContext } from '../../contexts/SettingsContext'
-import { Outlet } from 'react-router-dom'
 import {
   ContentContainer,
   DefaultLayoutContainer,
   DefaultLayoutContent,
+  LinesCounter,
   MenuWrapper,
+  OutletContainer,
 } from './styles'
 import { Tabs } from '../../components/Tabs'
 
@@ -37,12 +38,12 @@ export function DefaultLayout() {
         <DefaultLayoutContent>
           <Tabs />
           <ContentContainer>
-            <div>
+            <LinesCounter>
               {numberList.map((number) => {
                 return <p key={number}>{number}</p>
               })}
-            </div>
-            <Outlet />
+            </LinesCounter>
+            <OutletContainer />
           </ContentContainer>
         </DefaultLayoutContent>
       </DefaultLayoutContainer>

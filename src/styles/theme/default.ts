@@ -13,6 +13,7 @@ export const defaultTheme = {
   html: '#e34c26',
   vue: '#42b883  ',
 
+  'gray-500': '#4b5563',
   'gray-400': '#94a3b8',
   'gray-300': '#cbd5e1',
 } as const

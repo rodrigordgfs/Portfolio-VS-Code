@@ -29,7 +29,7 @@ export const MenuIcon = styled(FiMenu)`
   cursor: pointer;
   display: none;
 
-  @media only screen and (max-device-width: 510px) {
+  @media only screen and (max-device-width: 850px) {
     display: flex;
   }
 `

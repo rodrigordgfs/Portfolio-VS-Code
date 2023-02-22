@@ -23,7 +23,7 @@ export const SocialNetworksContainer = styled.div`
   width: 60px;
   background: ${(props) => props.theme.primary};
 
-  @media only screen and (max-device-width: 510px) {
+  @media only screen and (max-device-width: 850px) {
     height: 100vh;
   }
 `
@@ -36,7 +36,7 @@ export const FilesContainer = styled.div`
   padding: 0 16px;
   background: ${(props) => props.theme.primary};
 
-  @media only screen and (max-device-width: 510px) {
+  @media only screen and (max-device-width: 850px) {
     height: 100vh;
   }
 `
