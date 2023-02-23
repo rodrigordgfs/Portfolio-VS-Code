@@ -13,7 +13,7 @@ export const DefaultLayoutContent = styled.div`
   width: calc(100vw - 80px);
 
   @media only screen and (max-device-width: 850px) {
-    height: 100vh;
+    height: calc(100vh - 50px);
     width: 100%;
   }
 `
