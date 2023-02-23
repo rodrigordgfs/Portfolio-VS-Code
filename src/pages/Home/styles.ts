@@ -54,6 +54,10 @@ export const NameText = styled.p`
   span {
     color: ${({ theme }) => theme.accent};
   }
+
+  @media only screen and (max-device-width: 1200px) {
+    font-size: 2rem;
+  }
 `
 
 export const ImageContainer = styled.div`
