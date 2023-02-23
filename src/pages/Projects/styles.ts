@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import * as ScrollArea from '@radix-ui/react-scroll-area'
 
-export const ProjectsContainer = styled.div`
+export const ProjectsContainer = styled(ScrollArea.Root)`
   display: flex;
   flex-direction: column;
   padding: 16px;

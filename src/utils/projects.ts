@@ -15,7 +15,6 @@ export const PROJECTS = [
       'Zod',
       'Styled Components',
       'React Hook Forms',
-      'Axios',
     ],
   },
   {
@@ -32,7 +31,6 @@ export const PROJECTS = [
       'Zod',
       'Styled Components',
       'React Hook Forms',
-      'Axios',
     ],
   },
   {
@@ -43,5 +41,47 @@ export const PROJECTS = [
     link: 'https://coffee-delivery-sigma-gules.vercel.app/',
     description: 'Projeto criado como desafio do bootcamp da Rocketseat',
     tags: ['React', 'Styled Components', 'TypeScript', 'Context API'],
+  },
+  {
+    id: '9c2e18fe-aba1-4895-b387-37a271966cdf',
+    image: 'https://i.imgur.com/LrJSAcK.png',
+    title: 'Ignite Timer',
+    description: 'Projeto criado como desafio do bootcamp da Rocketseat',
+    github: 'https://github.com/rodrigordgfs/Ignite-Timer',
+    link: 'https://ignite-timer-brown-tau.vercel.app/',
+    tags: [
+      'React',
+      'Styled Components',
+      'TypeScript',
+      'zod',
+      'React Hook Forms',
+      'date-fns',
+    ],
+  },
+  {
+    id: '8114d694-d9aa-40d7-b1b6-37bd092b9a8f',
+    image: 'https://i.imgur.com/VxgqCzY.png',
+    title: 'R Chat',
+    description:
+      'Chat criado para colocar em pratica os conhecimentos adiquirido sobre React.',
+    github: 'https://github.com/rodrigordgfs/R-Chat',
+    link: 'https://r-chat.vercel.app/',
+    tags: [
+      'React',
+      'TailwindCSS',
+      'TypeScript',
+      'Context API',
+      'Firebase',
+      'date-fns',
+    ],
+  },
+  {
+    id: 'ef4a31f2-d773-4029-bcf8-6c148c91d2d3',
+    image: 'https://i.imgur.com/6CG03RE.png',
+    title: 'To Do List',
+    description: 'Projeto criado como desafio do bootcamp da Rocketseat',
+    github: 'https://github.com/rodrigordgfs/ToDo-List',
+    link: 'https://to-do-list-pi-tawny.vercel.app/',
+    tags: ['React', 'TypeScript', 'CSS Modules', 'Phosphor Icons'],
   },
 ] as IProjects[]
