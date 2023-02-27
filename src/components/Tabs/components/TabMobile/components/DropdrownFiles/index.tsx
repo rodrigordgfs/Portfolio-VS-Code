@@ -36,7 +36,7 @@ export function DropdownFiles() {
               onClick={() => handleFileClick('/')}
             >
               <ReactIcon />
-              <p>Home.tsx</p>
+              <p>Inicio.tsx</p>
             </FilesItem>
           </DropdownMenu.Item>
           <DropdownMenu.Item>
@@ -44,8 +44,8 @@ export function DropdownFiles() {
               active={useIsActiveRoute('/about')}
               onClick={() => handleFileClick('/about')}
             >
-              <VUEIcon />
-              <p>About.vue</p>
+              <HTMLIcon />
+              <p>Sobre.html</p>
             </FilesItem>
           </DropdownMenu.Item>
           <DropdownMenu.Item>
@@ -53,8 +53,8 @@ export function DropdownFiles() {
               active={useIsActiveRoute('/projects')}
               onClick={() => handleFileClick('/projects')}
             >
-              <HTMLIcon />
-              <p>Projects.html</p>
+              <VUEIcon />
+              <p>Projetos.vue</p>
             </FilesItem>
           </DropdownMenu.Item>
           <DropdownMenu.Item>
@@ -63,7 +63,7 @@ export function DropdownFiles() {
               onClick={() => handleFileClick('/contact')}
             >
               <CSSIcon />
-              <p>Contact.css</p>
+              <p>Contato.css</p>
             </FilesItem>
           </DropdownMenu.Item>
         </FilesContainer>

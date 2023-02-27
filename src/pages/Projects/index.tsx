@@ -26,11 +26,8 @@ export function Projects() {
           )}
         </ProjectsGrid>
       </ScrollArea.Viewport>
-      <ScrollArea.Scrollbar
-        className="ScrollAreaScrollbar"
-        orientation="vertical"
-      >
-        <ScrollArea.Thumb className="ScrollAreaThumb" />
+      <ScrollArea.Scrollbar orientation="vertical">
+        <ScrollArea.Thumb />
       </ScrollArea.Scrollbar>
     </ProjectsContainer>
   )

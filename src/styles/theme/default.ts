@@ -5,6 +5,8 @@ export const defaultTheme = {
   accent: '#88cc44',
   text: '#FFFFFF',
   black: '#000000',
+  purple: '#6c84ff',
+  yellow: '#ffbc3c',
   transparent: 'transparent',
 
   'visual-studio-code': '#007ACC',

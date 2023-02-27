@@ -13,25 +13,25 @@ export function TabMobile() {
       {useIsActiveRoute('/') && (
         <TabItem to="/">
           <ReactIcon />
-          <span>Home.tsx</span>
+          <span>Inicio.tsx</span>
         </TabItem>
       )}
       {useIsActiveRoute('/about') && (
         <TabItem to="/about">
-          <VUEIcon />
-          <span>About.vue</span>
+          <HTMLIcon />
+          <span>Sobre.html</span>
         </TabItem>
       )}
       {useIsActiveRoute('/projects') && (
         <TabItem to="/projects">
-          <HTMLIcon />
-          <span>Projects.html</span>
+          <VUEIcon />
+          <span>Projetos.vue</span>
         </TabItem>
       )}
       {useIsActiveRoute('/contact') && (
         <TabItem to="/contact">
           <CSSIcon />
-          <span>Contact.css</span>
+          <span>Contato.css</span>
         </TabItem>
       )}
       <DropdownFiles />

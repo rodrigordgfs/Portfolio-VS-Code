@@ -10,19 +10,19 @@ export function TabsDesktop() {
     <TabsDesktopContainer>
       <TabItem to="/">
         <ReactIcon />
-        <span>Home.tsx</span>
+        <span>Inicio.tsx</span>
       </TabItem>
       <TabItem to="/about">
-        <VUEIcon />
-        <span>About.vue</span>
+        <HTMLIcon />
+        <span>Sobre.html</span>
       </TabItem>
       <TabItem to="/projects">
-        <HTMLIcon />
-        <span>Projects.html</span>
+        <VUEIcon />
+        <span>Projetos.vue</span>
       </TabItem>
       <TabItem to="/contact">
         <CSSIcon />
-        <span>Contact.css</span>
+        <span>Contato.css</span>
       </TabItem>
     </TabsDesktopContainer>
   )

@@ -83,7 +83,7 @@ export function Menu() {
         <ExplorerTitle>Explorer</ExplorerTitle>
         <PortfolioContainer>
           <FolderIcon />
-          <PortfolioText>Portfolio</PortfolioText>
+          <PortfolioText>Portifólio</PortfolioText>
         </PortfolioContainer>
         <Files>
           <FilesItem
@@ -91,28 +91,28 @@ export function Menu() {
             onClick={() => handleFileClick('/')}
           >
             <ReactIcon />
-            <p>Home.tsx</p>
+            <p>Inicio.tsx</p>
           </FilesItem>
           <FilesItem
             active={useIsActiveRoute('/about')}
             onClick={() => handleFileClick('/about')}
           >
-            <VUEIcon />
-            <p>About.vue</p>
+            <HTMLIcon />
+            <p>Sobre.html</p>
           </FilesItem>
           <FilesItem
             active={useIsActiveRoute('/projects')}
             onClick={() => handleFileClick('/projects')}
           >
-            <HTMLIcon />
-            <p>Projects.html</p>
+            <VUEIcon />
+            <p>Projetos.vue</p>
           </FilesItem>
           <FilesItem
             active={useIsActiveRoute('/contact')}
             onClick={() => handleFileClick('/contact')}
           >
             <CSSIcon />
-            <p>Contact.css</p>
+            <p>Contato.css</p>
           </FilesItem>
         </Files>
       </FilesContainer>
