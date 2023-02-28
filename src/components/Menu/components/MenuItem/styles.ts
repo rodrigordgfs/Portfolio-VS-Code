@@ -14,7 +14,7 @@ export const MenuItemContainer = styled.a`
 
   &:hover {
     transition: 0.2s color ease-in-out;
-    color: ${(props) => props.theme['gray-400']};
+    color: ${(props) => props.theme.accent};
   }
 `
 export const MenuItemTooltip = styled(Tooltip.Content)`
